@@ -189,7 +189,7 @@ execute \
 "run_postinst" \
 "Running post install scripts"
 
-printf_question_timeout "Should I install the themes and icons"
+printf_question_timeout "Should I install the themes and icons?"
 if [[ $answer == "y" || $answer == "Y" ]]; then
   fontmgr install --all
   iconmgr install N.I.B.
