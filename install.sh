@@ -182,7 +182,7 @@ run_postinst() {
   dotfilesreq xfce4-terminal
   replace "$APPDIR/panel" "MPDSERVER_host" "$mpdhostserver"
   replace "$APPDIR" "/home/jason" "$HOME"
-  xfce4-panel >/dev/null 2>&1 &
+  [[  "$DESKTOP_SESSION" =~ "xfce" ]] && xfce4-panel >/dev/null 2>&1 &
 }
 
 execute \
