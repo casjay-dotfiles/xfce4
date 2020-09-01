@@ -180,7 +180,7 @@ run_postinst() {
   mpdhostserver="${GETMPDSERVER}"
   killall xfce4-panel >/dev/null 2>&1
   fontmgr install --all
-  iconmgr install N.I..B.
+  iconmgr install N.I.B.
   thememgr install Arc-Pink-Dark lightdm grub
   dotfilesreq xfce4-terminal
   replace "$APPDIR/panel" "MPDSERVER_host" "$mpdhostserver"
