@@ -123,7 +123,7 @@ install_cpan $CPAN
 install_gem $GEMS
 
 # Other dependencies
-dotfilesreq git htop geany Thunar gtk-2.0 gtk-3.0 firefox 
+dotfilesreq git htop geany thunar gtk-2.0 gtk-3.0 firefox 
 dotfilesreqadmin
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
