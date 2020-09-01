@@ -176,7 +176,8 @@ failexitcode
 
 run_postinst() {
   dfmgr_run_post
-  mpdhostserver="${MPDSERVER:-localhost}"
+  [ -n "$MPDSERVER" ] && GETMPDSERVER="$(getent ahosts "$MPDSERVER" 2>/dev/null | head -n1 | awk '{print $1}')" || GETMPDSERVER="localhost"
+  mpdhostserver="${GETMPDSERVER}"
   killall xfce4-panel >/dev/null 2>&1
   fontmgr install --all
   iconmgr install N.I..B.
