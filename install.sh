@@ -194,7 +194,8 @@ if [[ $answer == "y" || $answer == "Y" ]]; then
   echo ""
   fontmgr install --all
   iconmgr install N.I.B.
-  thememgr install Arc-Pink-Dark lightdm grub  
+  thememgr install Arc-Pink-Dark
+  systemmgr install lightdm grub  
 fi
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
