@@ -179,9 +179,6 @@ run_postinst() {
   [ -n "$MPDSERVER" ] && GETMPDSERVER="$(getent ahosts "$MPDSERVER" 2>/dev/null | head -n1 | awk '{print $1}')" || GETMPDSERVER="localhost"
   mpdhostserver="${GETMPDSERVER}"
   killall xfce4-panel >/dev/null 2>&1
-  fontmgr install --all
-  iconmgr install N.I.B.
-  thememgr install Arc-Pink-Dark lightdm grub
   dotfilesreq xfce4-terminal
   replace "$APPDIR/panel" "MPDSERVER_host" "$mpdhostserver"
   replace "$APPDIR" "/home/jason" "$HOME"
@@ -191,6 +188,13 @@ run_postinst() {
 execute \
 "run_postinst" \
 "Running post install scripts"
+
+printf_question_timeout "Should I install the themes and icons"
+if [[ $answer == "y" || $answer == "Y" ]]; then
+  fontmgr install --all
+  iconmgr install N.I.B.
+  thememgr install Arc-Pink-Dark lightdm grub  
+fi
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
