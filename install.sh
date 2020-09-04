@@ -190,8 +190,8 @@ execute \
 "Running post install scripts"
 
 printf_question_timeout "Should I install the themes and icons?"
+echo ""
 if [[ $answer == "y" || $answer == "Y" ]]; then
-  echo ""
   fontmgr install --all
   iconmgr install N.I.B.
   thememgr install Arc-Pink-Dark
