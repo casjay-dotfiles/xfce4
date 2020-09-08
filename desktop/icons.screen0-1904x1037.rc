@@ -1,6 +1,26 @@
 [xfdesktop-version-4.10.3+-rcfile_format]
 4.10.3+=true
 
+[/home/jason/Desktop/scripts]
+row=6
+col=0
+
+[/home/jason/Desktop/lookAt]
+row=7
+col=0
+
+[/home/jason/Desktop/dotfiles]
+row=3
+col=0
+
+[/home/jason/Desktop/templates]
+row=4
+col=0
+
+[/home/jason/Desktop/adsb.tar.gz]
+row=5
+col=0
+
 [Trash]
 row=0
 col=0

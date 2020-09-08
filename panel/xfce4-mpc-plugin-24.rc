@@ -1,5 +1,5 @@
 [Settings]
-mpd_host=MPDSERVER_host
+mpd_host=10.0.94.19
 mpd_port=6600
 mpd_password=
 show_frame=true
