@@ -1,5 +1,5 @@
 favorites=exo-terminal-emulator.desktop,exo-file-manager.desktop,exo-web-browser.desktop
-recent=exo-terminal-emulator.desktop,exo-file-manager.desktop,visual-studio-code.desktop,xfce-keyboard-settings.desktop,xfce-session-settings.desktop
+recent=exo-terminal-emulator.desktop,exo-file-manager.desktop,xfce-keyboard-settings.desktop,xfce-session-settings.desktop
 button-icon=xfce4-whiskermenu
 button-single-row=true
 show-button-title=false
@@ -21,8 +21,8 @@ position-commands-alternate=false
 position-categories-alternate=true
 stay-on-focus-out=false
 confirm-session-command=true
-menu-width=453
-menu-height=510
+menu-width=438
+menu-height=576
 menu-opacity=100
 command-settings=xfce4-settings-manager
 show-command-settings=true
